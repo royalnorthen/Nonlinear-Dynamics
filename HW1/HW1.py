@@ -24,8 +24,8 @@ for i in x_plot:
         x_unstable_plot.append(i)
 
 plt.grid()
-plt.plot(x_stable_plot, r_stable_plot)
-plt.plot(x_unstable_plot, r_unstable_plot, linestyle='dashed')
+plt.plot(r_stable_plot, x_stable_plot)
+plt.plot(r_unstable_plot, x_unstable_plot, linestyle='dashed')
 plt.axis([-10, 10, -10, 10])
 plt.xlabel("r")
 plt.ylabel("x*")
